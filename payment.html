@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+
+
+        }
+
+        .two {
+
+            display: flex;
+            justify-content: space-evenly;
+            padding: 50px;
+
+        }
+
+        .one {
+            
+          background-color: #F5F7F9;  padding: 50px;
+            margin: 20px;
+        }
+
+        .frm {
+            background-color: #F5F7F9;
+            padding: 20px;
+            border: 4px solid rgb(197, 197, 197);
+            border-radius: 10px;
+
+        }
+
+        button {
+            height: 40px;
+            width: 500px;
+            border-radius: 10px;
+            text-align: center;
+            background-color: #004AAD;
+            color: white;
+        }
+
+        p {
+            font-family: cursive;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="two">
+
+        <div>
+            <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Complete your Payment
+                process</h1>
+            <i>by Taj Hotel</i>
+            <br>
+            <h1> ₹15,350</h1>
+            <br>
+            <img style="height: 300px; width: 400px;" src="./img/hotel-1.jpg" alt="">
+
+
+
+
+            <br>
+            <br>
+            <br>
+
+
+
+            Location :
+            <span id="location"> params.location</span>
+            <br>
+            <br>
+            CheckIn Date :
+            <span id="checkIn"> params.chkin</span>
+            <br>
+            <br>
+            CheckOut Date :
+            <span id="checkOut"> params.chkout</span>
+            <br>
+            <br>
+            Rooms :
+            <span id="rooms"> params.chkout</span>
+            <p>About this hotel
+                In a grand building overlooking Upper Lake, this sophisticated hotel is 3 km from Van Vihar National
+                Park and 17 km from Raja Bhoj Airport.
+
+                Elegant rooms provide Wi-Fi, smart TVs, minibars, and tea and coffeemaking facilities. Upgraded
+                rooms and suites have living areas, balconies and/or lake views. Room service is available.
+
+                There are 2 restaurants; one offers Chinese cuisine. Other amenities consist of a swanky bar, a
+                coffee shop, breakfast and parking, as well as a spa, a 24-hour gym and a tennis court. An infinity
+                pool and 4 hot tubs feature lake views. Event space includes a ballroom.</p></span>
+        </div>
+        <div class="one">
+
+            <h1>Payment Details</h1>
+            <br>
+            <h3>Complete your purchase by providing your payment details.</h3>
+
+
+            <form class="frm">
+                <h2>Verify using Phone Number</h2>
+                <input type="number" placeholder="Type your phone number" style="height: 30px; width: 500px;">
+                <br>
+                <br>
+                <button>Request OTP</button>
+            </form>
+
+            <br>
+            <br>
+            <br>
+
+
+
+            <form style="text-align: center;">
+                <button>
+                    Proceed to pay
+                </button>
+            </form>
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+    <script>
+        let paramsToObject = (dtest1, str) => {
+            let keyVal = str.split("=", 2)
+            dtest1[keyVal[0]] = keyVal[1];
+            return dtest1
+        }
+        let params = location.search.substr(1).split('&').reduce(paramsToObject, {});
+        document.getElementById("location").innerHTML = params.location;
+        document.getElementById("checkIn").innerHTML = params.chkin;
+        document.getElementById("checkOut").innerHTML = params.chkout;
+        document.getElementById("rooms").innerHTML = params.rooms;
+
+    </script>
+</body>
+
+</html>

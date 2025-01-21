@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- start css link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="./css/fontAwesome.css"> -->
+    <link rel="stylesheet" href="./css/animate.css">
+    <!-- end css link -->
+    
+    
+    
+    <!-- start js links -->
+
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/sweetalert.js"></script>
+    <!-- end js links -->
+
+
+
+
+    <title>Home page</title>
+</head>
+
+<body>
+
+
+    <nav class="navbar  bg-light shadow-lg navbar-expand-md fixed-top navbar-light">
+        <div class="container-fluid">
+            <img src="./img/logo.jpg" class="rounded-circle" width="60px" alt="">
+            <a href="#" class=" mx-4 text-white  navbar-brand">
+                HMS
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse" id="myMenu">
+
+                <ul class="navbar-nav w-100 justify-content-end ">
+
+                    <li class="nav-item fw-bold text-white ">
+                        Js Life :)
+                    </li>
+
+
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <br>
+    <br>
+    <br>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- nav tab -->
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a href="#signup" class="nav-link" data-bs-toggle="tab" id="ss">
+                            Singup
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#login" class="nav-link  active" data-bs-toggle="tab">
+                            Login
+                        </a>
+                    </li>
+
+                </ul>
+                <!-- nav panes -->
+                <div class="tab-content">
+                    <div class="tab-pane  container mt-3" id="signup">
+                        <img src="img/signup-2.webp" class="w-25" alt="">
+                        <form class="reg-form">
+
+                            <!-- name if we are using loops -->
+
+                            <input required name="fullname" type="text" placeholder="Full Name"
+                                class="form-control mb-3">
+                            <input required name="hotelname" type="text" placeholder="Hotel Name"
+                                class="form-control mb-3">
+                            <input required name="totalroom" type="number" placeholder="No of Hotels Room"
+                                class="form-control mb-3">
+                            <input required name="mobile" type="number" placeholder="Mobile Number"
+                                class="form-control mb-3">
+                            <input required name="email" type="email" placeholder="Email" class="form-control mb-3">
+                            <input required name="password" type="password" placeholder="password"
+                                class="form-control mb-3">
+                            <button type="submit" class="btn btn-primary w-100">Register</button>
+                        </form>
+                    </div>
+
+                    <div class="tab-pane container active mt-3" id="login">
+                        <img src="img/login-2.jfif" class="w-25" alt="">
+                        <form class="login-form">
+                            <input type="email" placeholder="Email" class="form-control mb-3">
+                            <input type="password" placeholder="password" class="form-control mb-3">
+                            <button type="submit" class="btn btn-primary w-100">Login</button>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-6   d-flex justify-content-center align-items-center">
+                <img src="img/hotel-1.jpg" class="w-100 mt-5 " alt="">
+            </div>
+        </div>
+    </div>
+
+
+    
+
+
+
+
+
+
+    <!-- start js link -->
+    <script src="./js/index.js"></script>
+    <!-- end js link -->
+
+
+
+
+
+</body>
+
+</html>

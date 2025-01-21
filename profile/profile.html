@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+
+
+    <!-- start css link -->
+    <link rel="stylesheet" href="/profile/css/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/fontAwesome.css">
+    <!-- end css link -->
+
+
+
+    <!-- start js link -->
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/sweetalert.js"></script>
+    <script src="../js/"></script>
+    <!-- end js link -->
+
+
+
+</head>
+
+<body>
+
+
+    <nav class="navbar  bg-light shadow-lg navbar-expand-md fixed-top navbar-light">
+        <div class="container-fluid">
+            <img src="../img/logo.jpg" class="rounded-circle" width="60px" alt="">
+            <a href="#" class=" mx-4  text-white  navbar-brand">
+                HMS
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse" id="myMenu">
+
+                <ul class="navbar-nav w-100 justify-content-end ">
+
+                    <div class="input-group w-50">
+                        <!-- <input type="search" class="form-control " placeholder="Search By Name, Email, room no.."> -->
+                        <!-- <span class="input-group-text text-white btn fw-bold">Search</span> -->
+                    </div>
+
+                    <button class="btn text-white fw-bold px-4 mx-5 logout-btn">Logout</button>
+
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <form action="/payment.html" method="get"  class="box" name="hotel-search">
+
+        <label for="">Location : </label> &nbsp; &nbsp;
+        <input type="location" name="location" list="location-data-list">
+        <datalist id="location-data-list"></datalist>
+        <br>
+        <br>
+
+
+
+        &nbsp; &nbsp; <label for="">CheckIn Date :</label> &nbsp; &nbsp;
+        <input type="date" name="chkin">
+        <br>
+        <br>
+
+        &nbsp; &nbsp; <label for="">CheckOut Date :</label> &nbsp; &nbsp;
+        <input type="date" name="chkout">
+
+        <br>
+        <br>
+        &nbsp; &nbsp; <label for="">Rooms :</label> &nbsp; &nbsp;
+        <input type="text" name="rooms">
+
+
+        <div>
+            &nbsp; &nbsp; <button type="submit" style="  background-color: lightblue;   height: 30px; width: 100px; border-radius: 10px;"><span style="  text-decoration: none;">Submit</span></button>
+        </div>
+
+
+
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- start js link -->
+    <script src="js/profile.js"></script>
+
+
+
+</body>
+
+</html>

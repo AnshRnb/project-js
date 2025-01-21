@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-image: linear-gradient(#306f88, #6bb8e9);
+}
+
+.nav-item {
+    font-size:  22px;
+}
+
+.navbar-brand {
+    font-size:  30px !important;
+    font-weight: bold;
+}
+
+.action-btn {
+    background-image: linear-gradient(#306f88, #6bb8e9);
+    border: none !important;
+    box-shadow:  none !important;
+    font-size: 22px;
+}
+
+.nav-tabs .nav-link.active {
+
+    background-image: linear-gradient(#306f88, #6bb8e9);
+    color: #fff !important;
+
+}
+
+.box {
+    /* display: flex; */
+    background-image: linear-gradient(#306f88, #6bb8e9);
+    /* justify-content: space-evenly;
+    width: 500px;
+    height: 300px; */
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;      /* Centers vertically */
+    height: 500px;  
+    border: 10px solid black;
+
+    
+}
+
+
